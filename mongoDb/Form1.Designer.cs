@@ -29,22 +29,23 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.tbxCustomerId = new System.Windows.Forms.TextBox();
+            this.tbxCustomerName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.tbxCustomerSurname = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.tbxCustomerCity = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.tbxCustomerBalance = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.tbxCustomerShoppingCount = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnCreateCustomer = new System.Windows.Forms.Button();
+            this.btnRemoveCustomer = new System.Windows.Forms.Button();
+            this.btnUpdateCustomer = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btnCustomerList = new System.Windows.Forms.Button();
+            this.btnGetCustomerById = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -58,21 +59,21 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Müşteri Id : ";
             // 
-            // textBox1
+            // tbxCustomerId
             // 
-            this.textBox1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox1.Location = new System.Drawing.Point(171, 26);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(193, 30);
-            this.textBox1.TabIndex = 1;
+            this.tbxCustomerId.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.tbxCustomerId.Location = new System.Drawing.Point(171, 26);
+            this.tbxCustomerId.Name = "tbxCustomerId";
+            this.tbxCustomerId.Size = new System.Drawing.Size(193, 30);
+            this.tbxCustomerId.TabIndex = 1;
             // 
-            // textBox2
+            // tbxCustomerName
             // 
-            this.textBox2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox2.Location = new System.Drawing.Point(171, 71);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(193, 30);
-            this.textBox2.TabIndex = 3;
+            this.tbxCustomerName.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.tbxCustomerName.Location = new System.Drawing.Point(171, 71);
+            this.tbxCustomerName.Name = "tbxCustomerName";
+            this.tbxCustomerName.Size = new System.Drawing.Size(193, 30);
+            this.tbxCustomerName.TabIndex = 3;
             // 
             // label2
             // 
@@ -84,13 +85,13 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Müşteri Adı :";
             // 
-            // textBox3
+            // tbxCustomerSurname
             // 
-            this.textBox3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox3.Location = new System.Drawing.Point(171, 124);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(193, 30);
-            this.textBox3.TabIndex = 5;
+            this.tbxCustomerSurname.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.tbxCustomerSurname.Location = new System.Drawing.Point(171, 124);
+            this.tbxCustomerSurname.Name = "tbxCustomerSurname";
+            this.tbxCustomerSurname.Size = new System.Drawing.Size(193, 30);
+            this.tbxCustomerSurname.TabIndex = 5;
             // 
             // label3
             // 
@@ -102,13 +103,13 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "Müşteri Soyadı :";
             // 
-            // textBox4
+            // tbxCustomerCity
             // 
-            this.textBox4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox4.Location = new System.Drawing.Point(171, 176);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(193, 30);
-            this.textBox4.TabIndex = 7;
+            this.tbxCustomerCity.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.tbxCustomerCity.Location = new System.Drawing.Point(171, 176);
+            this.tbxCustomerCity.Name = "tbxCustomerCity";
+            this.tbxCustomerCity.Size = new System.Drawing.Size(193, 30);
+            this.tbxCustomerCity.TabIndex = 7;
             // 
             // label4
             // 
@@ -120,13 +121,13 @@
             this.label4.TabIndex = 6;
             this.label4.Text = "Müşteri Şehri: ";
             // 
-            // textBox5
+            // tbxCustomerBalance
             // 
-            this.textBox5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox5.Location = new System.Drawing.Point(171, 225);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(193, 30);
-            this.textBox5.TabIndex = 9;
+            this.tbxCustomerBalance.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.tbxCustomerBalance.Location = new System.Drawing.Point(171, 225);
+            this.tbxCustomerBalance.Name = "tbxCustomerBalance";
+            this.tbxCustomerBalance.Size = new System.Drawing.Size(193, 30);
+            this.tbxCustomerBalance.TabIndex = 9;
             // 
             // label5
             // 
@@ -138,13 +139,13 @@
             this.label5.TabIndex = 8;
             this.label5.Text = "Bakiye :";
             // 
-            // textBox6
+            // tbxCustomerShoppingCount
             // 
-            this.textBox6.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox6.Location = new System.Drawing.Point(171, 265);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(193, 30);
-            this.textBox6.TabIndex = 11;
+            this.tbxCustomerShoppingCount.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.tbxCustomerShoppingCount.Location = new System.Drawing.Point(171, 265);
+            this.tbxCustomerShoppingCount.Name = "tbxCustomerShoppingCount";
+            this.tbxCustomerShoppingCount.Size = new System.Drawing.Size(193, 30);
+            this.tbxCustomerShoppingCount.TabIndex = 11;
             // 
             // label6
             // 
@@ -156,49 +157,41 @@
             this.label6.TabIndex = 10;
             this.label6.Text = "Alışveriş Tutarı : ";
             // 
-            // button1
+            // btnCreateCustomer
             // 
-            this.button1.BackColor = System.Drawing.Color.OrangeRed;
-            this.button1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button1.Location = new System.Drawing.Point(171, 301);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(193, 34);
-            this.button1.TabIndex = 12;
-            this.button1.Text = "Listele";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnCreateCustomer.BackColor = System.Drawing.Color.OrangeRed;
+            this.btnCreateCustomer.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnCreateCustomer.Location = new System.Drawing.Point(171, 341);
+            this.btnCreateCustomer.Name = "btnCreateCustomer";
+            this.btnCreateCustomer.Size = new System.Drawing.Size(193, 34);
+            this.btnCreateCustomer.TabIndex = 13;
+            this.btnCreateCustomer.Text = "Ekle";
+            this.btnCreateCustomer.UseVisualStyleBackColor = false;
+            this.btnCreateCustomer.Click += new System.EventHandler(this.btnCreateCustomer_Click);
             // 
-            // button2
+            // btnRemoveCustomer
             // 
-            this.button2.BackColor = System.Drawing.Color.OrangeRed;
-            this.button2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button2.Location = new System.Drawing.Point(171, 341);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(193, 34);
-            this.button2.TabIndex = 13;
-            this.button2.Text = "Ekle";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnRemoveCustomer.BackColor = System.Drawing.Color.OrangeRed;
+            this.btnRemoveCustomer.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnRemoveCustomer.Location = new System.Drawing.Point(171, 381);
+            this.btnRemoveCustomer.Name = "btnRemoveCustomer";
+            this.btnRemoveCustomer.Size = new System.Drawing.Size(193, 34);
+            this.btnRemoveCustomer.TabIndex = 14;
+            this.btnRemoveCustomer.Text = "Sil";
+            this.btnRemoveCustomer.UseVisualStyleBackColor = false;
+            this.btnRemoveCustomer.Click += new System.EventHandler(this.btnRemoveCustomer_Click);
             // 
-            // button3
+            // btnUpdateCustomer
             // 
-            this.button3.BackColor = System.Drawing.Color.OrangeRed;
-            this.button3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button3.Location = new System.Drawing.Point(171, 381);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(193, 34);
-            this.button3.TabIndex = 14;
-            this.button3.Text = "Sil";
-            this.button3.UseVisualStyleBackColor = false;
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.OrangeRed;
-            this.button4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button4.Location = new System.Drawing.Point(171, 421);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(193, 34);
-            this.button4.TabIndex = 15;
-            this.button4.Text = "Güncelle";
-            this.button4.UseVisualStyleBackColor = false;
+            this.btnUpdateCustomer.BackColor = System.Drawing.Color.OrangeRed;
+            this.btnUpdateCustomer.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnUpdateCustomer.Location = new System.Drawing.Point(171, 421);
+            this.btnUpdateCustomer.Name = "btnUpdateCustomer";
+            this.btnUpdateCustomer.Size = new System.Drawing.Size(193, 34);
+            this.btnUpdateCustomer.TabIndex = 15;
+            this.btnUpdateCustomer.Text = "Güncelle";
+            this.btnUpdateCustomer.UseVisualStyleBackColor = false;
+            this.btnUpdateCustomer.Click += new System.EventHandler(this.btnUpdateCustomer_Click);
             // 
             // dataGridView1
             // 
@@ -208,30 +201,55 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(959, 346);
+            this.dataGridView1.Size = new System.Drawing.Size(1066, 346);
             this.dataGridView1.TabIndex = 16;
+            // 
+            // btnCustomerList
+            // 
+            this.btnCustomerList.BackColor = System.Drawing.Color.OrangeRed;
+            this.btnCustomerList.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnCustomerList.Location = new System.Drawing.Point(171, 301);
+            this.btnCustomerList.Name = "btnCustomerList";
+            this.btnCustomerList.Size = new System.Drawing.Size(193, 34);
+            this.btnCustomerList.TabIndex = 17;
+            this.btnCustomerList.Text = "Listele";
+            this.btnCustomerList.UseVisualStyleBackColor = false;
+            this.btnCustomerList.Click += new System.EventHandler(this.btnCustomerList_Click);
+            // 
+            // btnGetCustomerById
+            // 
+            this.btnGetCustomerById.BackColor = System.Drawing.Color.OrangeRed;
+            this.btnGetCustomerById.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnGetCustomerById.Location = new System.Drawing.Point(171, 461);
+            this.btnGetCustomerById.Name = "btnGetCustomerById";
+            this.btnGetCustomerById.Size = new System.Drawing.Size(193, 34);
+            this.btnGetCustomerById.TabIndex = 18;
+            this.btnGetCustomerById.Text = "Id\'ye Göre getir";
+            this.btnGetCustomerById.UseVisualStyleBackColor = false;
+            this.btnGetCustomerById.Click += new System.EventHandler(this.btnGetCustomerById_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1359, 598);
+            this.ClientSize = new System.Drawing.Size(1466, 507);
+            this.Controls.Add(this.btnGetCustomerById);
+            this.Controls.Add(this.btnCustomerList);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.btnUpdateCustomer);
+            this.Controls.Add(this.btnRemoveCustomer);
+            this.Controls.Add(this.btnCreateCustomer);
+            this.Controls.Add(this.tbxCustomerShoppingCount);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.tbxCustomerBalance);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.tbxCustomerCity);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.tbxCustomerSurname);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.tbxCustomerName);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tbxCustomerId);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -244,22 +262,23 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox tbxCustomerId;
+        private System.Windows.Forms.TextBox tbxCustomerName;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox tbxCustomerSurname;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox tbxCustomerCity;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox tbxCustomerBalance;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox tbxCustomerShoppingCount;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnCreateCustomer;
+        private System.Windows.Forms.Button btnRemoveCustomer;
+        private System.Windows.Forms.Button btnUpdateCustomer;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button btnCustomerList;
+        private System.Windows.Forms.Button btnGetCustomerById;
     }
 }
 

@@ -10,7 +10,7 @@ namespace mongoDb.Services
         public MongoDbConnection()
         {
             var client = new MongoClient("mongodb://localhost:27017");
-            client.GetDatabase("MongoDbCustomer");
+            _database=client.GetDatabase("MongoDbCustomer");
             
         }
         public IMongoCollection<BsonDocument> GetCustomersCollection() 
